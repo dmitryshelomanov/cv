@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --paragraph-line-height: 25px;
+  --secondary-color: #03a9f4;
+  --bg-color: #fff;
+  --primary-color: #19212b;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+p,
+.expirience li {
+  line-height: var(--paragraph-line-height);
+}
+
+.bio p {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  z-index: 2;
+}
+
+a {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.langs {
+  margin-top: 10px;
+}
+
+.social a:not(:last-child),
+.langs a:not(:last-child) {
+  margin-right: 7px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.skills,
+.bio {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skills > div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.expirience {
+  margin-bottom: 30px;
+  border-left: 1px solid var(--secondary-color);
+  padding-left: 15px;
+  position: relative;
+}
+
+.expirience::before {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: " ";
+}
+
+img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bio {
+  padding-top: 15px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.bio h1 {
+  margin-top: 0;
+}
+
+.bio div.position {
+  margin-left: 25px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.projects a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+}
+
+.col.production {
+  flex: 1;
+  margin-right: 35px;
+}
+
+@media all and (max-device-width: 480px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio div.position {
+    margin-left: 0;
+  }
+
+  img {
+    margin: 5px 0px 15px 0px;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .container {
+    padding: 5px 16px;
+  }
+
+  .expirience {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .expirience::before {
+    display: none;
+  }
+}
+
+@media all and (max-device-width: 975px) {
+  .row {
+    flex-direction: column;
+  }
+}

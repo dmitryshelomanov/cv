@@ -1,12 +1,12 @@
 import * as React from "react";
 import { ResumeTemplate } from "../templates/resume";
 
-export default function ResumePage() {
+export default function EnglishPage() {
   return (
     <ResumeTemplate
       translations={{
         about: {
-          title: "О себе",
+          title: "About me",
           description: `
             Frontend Developer с опытом разработки мобильных приложений на React Native.
             Увлекаюсь новыми языками программирования (из последних Rust, Haskell, Reason).
@@ -14,16 +14,16 @@ export default function ResumePage() {
           `,
         },
         skils: {
-          lang: "Языки",
-          tech: "Технологии",
-          title: "Скилы",
+          lang: "Languages",
+          tech: "Technologies",
+          title: "Skills",
         },
-        projects: "Демо проекты",
-        name: "Шеломанов Дмитрий",
-        expirience: "Опыт работы",
-        responsibility: "Обязанности",
-        achievements: "Достижения",
-        techonologies: "Используемые технологии",
+        projects: "Pet projects",
+        name: "Shelomanov Dmitry",
+        expirience: "Work expirience",
+        responsibility: "Responsibility",
+        achievements: "Achievements",
+        techonologies: "Technologies used",
       }}
       about={[
         {
@@ -127,38 +127,7 @@ export default function ResumePage() {
           ],
         },
       ]}
-      projects={[
-        {
-          link: "https://dmitryshelomanov.github.io/reason-game-of-life/",
-          name: "Game of Live",
-          description: `Классическая игра жизнь. Написана на языке программирования Reason`,
-        },
-        {
-          link: "https://dmitryshelomanov.github.io/tower_of_hanoi/",
-          name: "Towers of Hanoi",
-          description: `Было интересно рассмотреть этот алгоритм. Задачу можно решить с помощью бота или самому (перетягивая кольца)`,
-        },
-        {
-          link: "https://dmitryshelomanov.github.io/snake/",
-          name: "Snake AI",
-          description: `
-            В процессе разработке проекта я научился работать с графами.
-            В этом проекте можно увидеть визуализацию алгоритмов поиска пути (A*, Дейкстра и другие).
-            Визуализация в игровой форме - классическая змейка, так же можно поиграть против ботов
-          `,
-        },
-        {
-          link: "https://github.com/mobileFight",
-          name: "Мобитва next",
-          description: `Зародыш клона очень старой игры. Пишется на React + NodeJs.
-          Очень интересно реализовать систему квестов и систему боя (Pull requests are welcome)`,
-        },
-        {
-          link: "https://dmitryshelomanov.github.io/music-player/",
-          name: "Музыкальный плеер",
-          description: `Простенький плеер с визуализацией`,
-        },
-      ]}
+      projects={[]}
     />
   );
 }
