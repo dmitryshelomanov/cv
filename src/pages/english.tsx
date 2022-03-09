@@ -8,9 +8,9 @@ export default function EnglishPage() {
         about: {
           title: "About me",
           description: `
-            Frontend Developer с опытом разработки мобильных приложений на React Native.
-            Увлекаюсь новыми языками программирования (из последних Rust, Haskell, Reason).
-            Изучаю Computer Science. Помогаю новичкам и пытаюсь писать статьи. В дальнейшем хотел бы попробовать вести курсы.
+            Frontend Developer with experience in mobile app development with React Native.
+            I am fond of new programming languages ​​(from the latest Rust, Haskell, Reason).
+            I study computer science. Helping newbies and trying to write articles. I would like to try teaching in the future.
           `,
         },
         skils: {
@@ -27,14 +27,14 @@ export default function EnglishPage() {
       }}
       about={[
         {
-          company: "Explory (совместный стартап)",
+          company: "Explory (startup)",
           position: "",
-          responsibility: ["Разработка приложения на React Native"],
+          responsibility: ["Created app with React Native"],
           achievements: [
-            "Написано большое приожения (порядка 80 экранов)",
-            "Написано много интенесных решений внутри приложения",
-            "Написано решение для сокетного апи",
-            "Выступал в роли лида в мобильной разработке",
+            "I've developed a mobile application with at least 80 screens",
+            "Written many interesting solutions inside the application",
+            "Created own socket transport",
+            "As a new experience I had a lot of responsibility of the result of my team",
           ],
           techonologies: [
             "React Native, Styled-components",
@@ -45,21 +45,20 @@ export default function EnglishPage() {
       ]}
       expirience={[
         {
-          company: "ООО БК «Олимп»",
-          position:
-            "Senior Frontend Developer (Июнь 2020 - по настоящее время)",
+          company: "Olimp Bet",
+          position: "Senior Frontend Developer (June 2020 - from now)",
           responsibility: [
-            `Разработка мобильной и десктопной версии сайта`,
-            `Разработка SDK для написания таких же букмекерских контор \n
-          (Можно подключать логику и кастомизировать, не важно что отвечает за рендер)`,
-            `Внедрил ревью кода и фиче бранчи`,
-            `Внедрил тестирование`,
+            `Development mobile and desktop version of web site`,
+            `Developlent Bets SDK \n
+          (You can connect logic to own renderer and customize it)`,
+            `Implemented code review and feature brunches`,
+            `Implemented unit testing`,
           ],
           achievements: [
-            "Разработан гибкий SDK",
-            "Разработана система компонентов",
-            "Переписал старый код с использованием SDK",
-            "Успешно внедрены новые архитектурные решения",
+            "Created configurable SDK",
+            "Created design-system",
+            "Refactored old code with next sdk",
+            "Successfully implemented new architectural solutions",
           ],
           techonologies: [
             "HTML, CSS",
@@ -69,21 +68,21 @@ export default function EnglishPage() {
           ],
         },
         {
-          company: "ООО «Диалог»",
-          position: "Senior Frontend Developer (Май 2019 - Август 2020)",
+          company: "Dialog (Chat messanger)",
+          position: "Senior Frontend Developer (May 2019 - August 2020)",
           responsibility: [
-            `Покрытие тестами ui кита`,
-            `Покрытие тестами платформу (dialog-web-platform)`,
-            `Разработка модулей для платформы`,
-            `Участие в разработке архитектуры`,
-            "Участие в ревью кода",
+            `UI test coverage`,
+            `Dialog-web-platform test coverage`,
+            `Development platform's modules`,
+            `Participation in the development of architecture`,
+            "Participation in code reviews",
           ],
           achievements: [
-            "Разработан модуль поиска групп и пользователей (локально плюс глобально)",
-            "Разработана система настроек",
-            "Созданы компоненты для виртуализации и мульти селекта",
-            "Внедрен просмотрщик изображений",
-            "Внедрены решения по архитектуре (работа с браузерной бд плюс локальный стейт)",
+            "Search module developed for groups and users (locally and globally)",
+            "Created settings system",
+            "Created virtualized components",
+            "Implemented images preview",
+            "Implemented architecture",
           ],
           techonologies: [
             "HTML, CSS",
@@ -94,12 +93,12 @@ export default function EnglishPage() {
         },
         {
           company: "Unitemp",
-          position: "Старший разработчик (Февраль 2018 - Май 2019)",
+          position: "Senior Frontend Developer (Feb 2018 - May 2019)",
           responsibility: [
-            `Написание кроссплатформенного приложения на React native`,
-            `Разработка архитектуры с нуля для приложения`,
-            `Поиск багов и форк сторонних библиотек`,
-            `Написание собственных библиотек в open source`,
+            `Development cross-platform application with React native`,
+            `Designing an architecture from scratch for an application`,
+            `Support for third party libraries`,
+            `Development own open source libraries`,
           ],
           achievements: [],
           techonologies: [
@@ -110,13 +109,13 @@ export default function EnglishPage() {
           ],
         },
         {
-          company: `ООО "Мир Идей"`,
-          position: "Web developer (Июль 2017 - Февраль 2018)",
+          company: `World of Ideas`,
+          position: "Web developer (July 2017 - Feb 2018)",
           responsibility: [
-            `Верстка лендингов`,
-            `Разработка spa на vue js`,
-            `Поддержка существующих проектов`,
-            `Разработка платформы для обработки баннеров`,
+            `Landing page layout`,
+            `Development SPA with VueJS`,
+            `Support current projects`,
+            `Development a banner processing platform`,
           ],
           achievements: [],
           techonologies: [
