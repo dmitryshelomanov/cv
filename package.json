@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d public"
+    "deploy": "npm run clean && npx gh-pages -d public"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.6",
