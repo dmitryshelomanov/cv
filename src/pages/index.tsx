@@ -131,17 +131,17 @@ export default function ResumePage() {
       projects={[
         {
           link: "https://dmitryshelomanov.github.io/reason-game-of-life/",
-          name: "Game of Live",
+          name: "Game of Live 🎲",
           description: `Классическая игра жизнь. Написана на языке программирования Reason`,
         },
         {
           link: "https://dmitryshelomanov.github.io/tower_of_hanoi/",
-          name: "Towers of Hanoi",
+          name: "Towers of Hanoi 👜",
           description: `Было интересно рассмотреть этот алгоритм. Задачу можно решить с помощью бота или самому (перетягивая кольца)`,
         },
         {
           link: "https://dmitryshelomanov.github.io/snake/",
-          name: "Snake AI",
+          name: "Snake AI 🐍",
           description: `
             В процессе разработке проекта я научился работать с графами.
             В этом проекте можно увидеть визуализацию алгоритмов поиска пути (A*, Дейкстра и другие).
@@ -150,13 +150,13 @@ export default function ResumePage() {
         },
         {
           link: "https://github.com/mobileFight",
-          name: "Мобитва next",
+          name: "Мобитва next 🎮",
           description: `Зародыш клона очень старой игры. Пишется на React + NodeJs.
           Очень интересно реализовать систему квестов и систему боя (Pull requests are welcome)`,
         },
         {
           link: "https://dmitryshelomanov.github.io/music-player/",
-          name: "Музыкальный плеер",
+          name: "Музыкальный плеер 🎹",
           description: `Простенький плеер с визуализацией`,
         },
       ]}
