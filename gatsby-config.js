@@ -3,5 +3,5 @@ module.exports = {
   siteMetadata: {
     title: "Resume",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-css-modules-typings"],
 };

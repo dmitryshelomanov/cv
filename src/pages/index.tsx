@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ResumeTemplate } from "../templates/resume";
+import "./app.css";
 
 export default function ResumePage() {
   return (

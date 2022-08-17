@@ -1,6 +1,8 @@
 import * as React from "react";
 import cn from "classnames";
+import { Link } from "gatsby";
 import avatar from "../../assets/avatar.jpg";
+// @ts-ignore
 import * as styles from "./style.module.css";
 
 type Props = {
@@ -67,8 +69,8 @@ export function ResumeTemplate({
             </a>
           </div>
           <div className={styles.langs}>
-            <a href="/">ru</a>
-            <a href="/english">eng</a>
+            <Link to="/">ru</Link>
+            <Link to="/english">eng</Link>
           </div>
         </div>
       </div>
@@ -77,29 +79,29 @@ export function ResumeTemplate({
         <div className={cn(styles.col, styles.production)}>
           <h2>{translations.expirience}</h2>
 
-          {expirience.map((it) => (
-            <div className={styles.expirience}>
+          {expirience.map((it, index) => (
+            <div className={styles.expirience} key={index}>
               <h3>{it.company}</h3>
               <p className={styles.title}>- {it.position}</p>
               <p>{translations.responsibility}:</p>
 
               <ul>
-                {it.responsibility.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.responsibility.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
 
               <p>{translations.achievements}:</p>
               <ul>
-                {it.achievements.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.achievements.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
 
               <p>{translations.techonologies}:</p>
               <ul>
-                {it.techonologies.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.techonologies.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
             </div>
@@ -110,29 +112,29 @@ export function ResumeTemplate({
           <h2>{translations.about.title}</h2>
           <p>{translations.about.description}</p>
 
-          {about.map((it) => (
-            <div className={styles.expirience}>
+          {about.map((it, index) => (
+            <div className={styles.expirience} key={index}>
               <h3>{it.company}</h3>
               <p className={styles.title}>- {it.position}</p>
               <p>{translations.responsibility}:</p>
 
               <ul>
-                {it.responsibility.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.responsibility.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
 
               <p>{translations.achievements}:</p>
               <ul>
-                {it.achievements.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.achievements.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
 
               <p>{translations.techonologies}:</p>
               <ul>
-                {it.techonologies.map((it, index) => (
-                  <li key={index}>{it}</li>
+                {it.techonologies.map((it, idx) => (
+                  <li key={idx}>{it}</li>
                 ))}
               </ul>
             </div>

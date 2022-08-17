@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-
-:root {
-  --paragraph-line-height: 25px;
-  --secondary-color: #03a9f4;
-  --bg-color: #fff;
-  --primary-color: #19212b;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-  color: var(--primary-color);
-  box-sizing: border-box;
-  font-weight: bold;
-}
-
-html,
-body {
-  background-color: var(--bg-color);
-}
-
-body {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
 p,
 .expirience li {
   line-height: var(--paragraph-line-height);
@@ -41,11 +14,7 @@ p,
   margin: 0 auto;
   padding: 0 15px 0 15px;
   z-index: 2;
-}
-
-a {
-  color: var(--secondary-color);
-  font-weight: 700;
+  position: relative;
 }
 
 .langs {
@@ -55,10 +24,6 @@ a {
 .social a:not(:last-child),
 .langs a:not(:last-child) {
   margin-right: 7px;
-}
-
-li {
-  margin-bottom: 5px;
 }
 
 .skills,
@@ -123,6 +88,8 @@ img {
 .row {
   display: flex;
   flex-direction: row;
+  z-index: 2;
+  position: relative;
 }
 
 .col {
@@ -132,6 +99,17 @@ img {
 .col.production {
   flex: 1;
   margin-right: 35px;
+}
+
+.codePreview {
+  width: 400px;
+  transform: rotate(45deg);
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  top: 100px;
 }
 
 @media all and (max-device-width: 480px) {
