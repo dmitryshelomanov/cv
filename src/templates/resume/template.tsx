@@ -91,12 +91,16 @@ export function ResumeTemplate({
                 ))}
               </ul>
 
-              <p>{translations.achievements}:</p>
-              <ul>
-                {it.achievements.map((it, idx) => (
-                  <li key={idx}>{it}</li>
-                ))}
-              </ul>
+              {it.achievements.length > 0 && (
+                <>
+                  <p>{translations.achievements}:</p>
+                  <ul>
+                    {it.achievements.map((it, idx) => (
+                      <li key={idx}>{it}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
 
               <p>{translations.techonologies}:</p>
               <ul>

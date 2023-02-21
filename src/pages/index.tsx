@@ -46,9 +46,32 @@ export default function ResumePage() {
       ]}
       expirience={[
         {
+          company: "Цум",
+          position:
+            "Senior Frontend Developer / Team lead (Сентябрь 2021 - по настоящее время)",
+          responsibility: [
+            `В роли тим лида: Управление командой из 6ти человек
+            Дизайн команды
+            Перфоманс ревью
+            Помощь в усилении компетенций членов команды`,
+            `В роли тех лида: Курирование процесса разработки основного продукта и внутренних.
+            Написание не тривиальных фич.
+            Составление задач по тех долгу и обновления кодовой базы.
+            Внедрение новых практик и контроль текущих задач.
+            `,
+          ],
+          achievements: [],
+          techonologies: [
+            "HTML, CSS",
+            "JS, ES6",
+            "React, Styled Components, Effector/Redux, Typescript",
+            "Webpack",
+          ],
+        },
+        {
           company: "ООО БК «Олимп»",
           position:
-            "Senior Frontend Developer (Июнь 2020 - по настоящее время)",
+            "Senior Frontend Developer (Июнь 2020 - Сентябрь 2021, 1 год 2 месяца)",
           responsibility: [
             `Разработка мобильной и десктопной версии сайта`,
             `Разработка SDK для написания таких же букмекерских контор \n
@@ -71,7 +94,8 @@ export default function ResumePage() {
         },
         {
           company: "ООО «Диалог»",
-          position: "Senior Frontend Developer (Май 2019 - Август 2020)",
+          position:
+            "Senior Frontend Developer (Май 2019 - Август 2020, 1 год 4 месяца)",
           responsibility: [
             `Покрытие тестами ui кита`,
             `Покрытие тестами платформу (dialog-web-platform)`,
@@ -95,7 +119,8 @@ export default function ResumePage() {
         },
         {
           company: "Unitemp",
-          position: "Старший разработчик (Февраль 2018 - Май 2019)",
+          position:
+            "Старший разработчик (Февраль 2018 - Май 2019, 1 год 3 месяца)",
           responsibility: [
             `Написание кроссплатформенного приложения на React native`,
             `Разработка архитектуры с нуля для приложения`,
@@ -112,7 +137,7 @@ export default function ResumePage() {
         },
         {
           company: `ООО "Мир Идей"`,
-          position: "Web developer (Июль 2017 - Февраль 2018)",
+          position: "Web developer (Июль 2017 - Февраль 2018, 8 месяцев)",
           responsibility: [
             `Верстка лендингов`,
             `Разработка spa на vue js`,
