@@ -5,11 +5,21 @@ import avatar from "../../assets/avatar.jpg";
 // @ts-ignore
 import * as styles from "./style.module.css";
 
+type ResponsibilityTyped =
+  | {
+      type: "paragraph";
+      payload: string;
+    }
+  | {
+      type: "list";
+      payload: string[];
+    };
+
 type Props = {
   expirience: {
     company: string;
     position: string;
-    responsibility: string[];
+    responsibility: string[] | ResponsibilityTyped[];
     achievements: string[];
     techonologies: string[];
   }[];
@@ -79,37 +89,60 @@ export function ResumeTemplate({
         <div className={cn(styles.col, styles.production)}>
           <h2>{translations.expirience}</h2>
 
-          {expirience.map((it, index) => (
-            <div className={styles.expirience} key={index}>
-              <h3>{it.company}</h3>
-              <p className={styles.title}>- {it.position}</p>
-              <p>{translations.responsibility}:</p>
+          {expirience.map((it, index) => {
+            const asTypedExpirience = typeof it.responsibility[0] === "string";
 
-              <ul>
-                {it.responsibility.map((it, idx) => (
-                  <li key={idx}>{it}</li>
-                ))}
-              </ul>
+            return (
+              <div className={styles.expirience} key={index}>
+                <h3 className={styles.companyTitle}>{it.company}</h3>
+                <p className={cn(styles.title, styles.bold)}>- {it.position}</p>
+                <h3>{translations.responsibility}:</h3>
 
-              {it.achievements.length > 0 && (
-                <>
-                  <p>{translations.achievements}:</p>
+                {asTypedExpirience ? (
                   <ul>
-                    {it.achievements.map((it, idx) => (
+                    {it.responsibility.map((it, idx) => (
                       <li key={idx}>{it}</li>
                     ))}
                   </ul>
-                </>
-              )}
+                ) : (
+                  <div>
+                    {/* @ts-ignore */}
+                    {it.responsibility.map((it: ResponsibilityTyped, idx) => {
+                      if (it.type === "paragraph") {
+                        return <p key={idx}>{it.payload}</p>;
+                      }
 
-              <p>{translations.techonologies}:</p>
-              <ul>
-                {it.techonologies.map((it, idx) => (
-                  <li key={idx}>{it}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                      return (
+                        <ul>
+                          {it.payload.map((it, idx) => (
+                            <li key={`${idx}/list`}>{it}</li>
+                          ))}
+                        </ul>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {it.achievements.length > 0 && (
+                  <>
+                    <p>{translations.achievements}:</p>
+                    <ul>
+                      {it.achievements.map((it, idx) => (
+                        <li key={idx}>{it}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                <p>{translations.techonologies}:</p>
+                <ul>
+                  {it.techonologies.map((it, idx) => (
+                    <li key={idx}>{it}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
 
         <div className={cn(styles.col, styles.pet)}>
